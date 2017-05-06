@@ -1,0 +1,28 @@
+{
+  "name": "console-goodies",
+  "version": "0.0.1",
+  "description": "console goodies",
+  "main": "dist/index.js",
+  "repository": "https://github.com/morantron/console-goodies",
+  "author": "Morantron",
+  "license": "MIT",
+  "scripts": {
+    "demo": "npm run build:demo && node dist/demo.js",
+    "build": "webpack",
+    "build:demo": "require-self && DEMO=1 webpack"
+  },
+  "dependencies": {
+    "is-number": "^3.0.0",
+    "is-promise": "^2.1.0",
+    "lodash.flip": "^4.2.1",
+    "lodash.isfunction": "^3.0.8",
+    "lodash.isstring": "^4.0.1",
+    "lodash.isundefined": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "require-self": "^0.1.0",
+    "webpack": "^2.5.0"
+  }
+}

@@ -2,7 +2,10 @@
 
 Console goodies for debugging. :bug: :hammer:
 
+## Installation
 `yarn add console-goodies`.
+
+## Usage
 
 ```js
 import 'console-goodies';

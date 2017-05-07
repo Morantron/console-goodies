@@ -1,6 +1,6 @@
 {
   "name": "console-goodies",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "console goodies",
   "main": "dist/index.js",
   "repository": "https://github.com/morantron/console-goodies",
@@ -9,7 +9,8 @@
   "scripts": {
     "demo": "npm run build:demo && node dist/demo.js",
     "build": "webpack",
-    "build:demo": "require-self && DEMO=1 webpack"
+    "build:demo": "require-self && DEMO=1 webpack",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "is-number": "^3.0.0",
